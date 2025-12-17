@@ -1,0 +1,43 @@
+============================================================
+AGI-LIKE AGENT DEMO
+============================================================
+
+1. CAUSAL LEARNING PHASE
+----------------------------------------
+  Learned rule: gravity
+  Self-audit added rule: Velocity mismatch (friction missing?)
+  Episode 0: rules_learned=1
+  Episode 20: rules_learned=1
+  Episode 40: rules_learned=1
+  Episode 60: rules_learned=1
+  Episode 80: rules_learned=1
+
+  Causal learning complete: 0/100 successes
+
+2. PLANNING TEST (Task 1)
+----------------------------------------
+  Planning FAILED: Did not reach goal in 30 steps
+
+3. TRANSFER TEST (Task 2)
+----------------------------------------
+  Self-audit added rule: State transition incorrect (threshold rule missing?)
+  Self-audit added rule: State transition incorrect (threshold rule missing?)
+  Transfer SUCCESS: Solved new task in 3 steps
+
+4. SELF-CORRECTION DEMO
+----------------------------------------
+  Self-correction: 45 failures analyzed
+
+============================================================
+FINAL STATISTICS
+============================================================
+  episodes: 100
+  rules_learned: 1
+  memory_episodes: 1000
+  thinking_level: 3
+
+Learned rules:
+  - gravity: 0.3
+  - friction: 0.95
+  - state_transition: 50.0
+  - state_transition: 50.0
